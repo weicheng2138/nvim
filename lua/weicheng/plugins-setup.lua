@@ -18,6 +18,7 @@ vim.cmd([[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+    autocmd BufWritePost * FormatWrite
   augroup end
 ]])
 
@@ -90,8 +91,10 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
 	-- formatting & linting
-	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
-	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+	-- use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
+	-- use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+	use("mfussenegger/nvim-lint")
+	use("mhartington/formatter.nvim")
 
 	-- treesitter configuration
 	use({
