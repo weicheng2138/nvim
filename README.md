@@ -5,6 +5,9 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Usage
 
+Clone the repository and run the following command to install the plugins:
+Make sure that you place the `lazyvim` folder in your `~/.config/nvim` directory.
+
 ```shell
 git clone
 ```
