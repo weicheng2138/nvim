@@ -9,6 +9,13 @@ return {
         ["<C-j>"] = { "show" },
         -- You can keep or customize other keymaps as needed
       },
+      completion = {
+        list = {
+          selection = {
+            auto_insert = true,
+          },
+        },
+      },
     },
   },
   {
